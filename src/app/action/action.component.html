@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<div class="container"><br>
+  <div class="jumbotron">
+    <h1>Gold Count: {{gold}}</h1>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+    <h2>Farm</h2>
+    <p>Earns 2-5 Gold</p>
+    <button (click)="farm()" class="btn btn-danger">Farm!</button>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+    <h2>Cave</h2>
+    <p>Earns 5-10 Gold</p>
+    <button (click)="cave()" class="btn btn-success">Cave!</button>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+    <h2>Casino</h2>
+    <p>Earn up to or Lose up to 100 Gold</p>
+    <button (click)="casino()" class="btn btn-primary">Casino!</button>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
+    <h2>House</h2>
+    <p>Earns 7-15 Gold</p>
+    <button (click)="house()" class="btn btn-warning">House!</button><br><br><br>
+  </div>
+  <div class="display">
+    <p>Activity Log</p>
+    <ul class="log" *ngFor="let l of log">
+      <li>{{l}}</li>
+    </ul>
+  </div>
+</div>
